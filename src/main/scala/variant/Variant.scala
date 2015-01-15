@@ -83,7 +83,8 @@ abstract class Variant(
   // pieces surrounding a capture explode
   def hasMoveEffects = false
 
-  /** Applies a variant specific effect to the move. */
+  /** Applies a variant specific effect to the move. This helps decide whether a king is endangered by a move, for
+    * example */
   def addVariantEffect(move: Move): Move = move
 
   /**
